@@ -23,7 +23,7 @@ public class fbSignUp extends base {
     //https://www.facebook.com/
     public WebDriver driver;
     public WebDriverWait wait;
-    @FindBy(how = How.ID, using = "u_1_7")
+    @FindBy(how = How.ID, using = "u_0_7")
     public WebElement fName;
     @FindBy(how = How.ID, using = "u_0_9")
     public WebElement lName;

@@ -23,7 +23,7 @@ public class base {
     public static ExtentTest test;
 
     public static String getData(String nodeName) throws ParserConfigurationException, SAXException, IOException {
-        File fXmlFile = new File("testConfigfb.xml");
+        File fXmlFile = new File("C:/workspace/configs/testConfigfb.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
         Document doc = dBuilder.parse(fXmlFile);

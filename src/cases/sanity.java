@@ -27,8 +27,8 @@ public class sanity extends base {
 
     @BeforeClass
     public static void startSession() throws ParserConfigurationException, SAXException, IOException {
-        base.repInstance();
-//		System.setProperty("webdriver.chrome.driver", "C:/workspace/selenuimDrivers/chromedriver.exe");
+        repInstance();
+        System.setProperty("webdriver.chrome.driver", "C:/workspace/selenuimDrivers/chromedriver.exe");
         driver = new ChromeDriver(); //no need to define as WebDriver because it extends base
         driver.get(getData("URL")); //navigate to url
         driver.manage().window().maximize();
@@ -41,19 +41,19 @@ public class sanity extends base {
 
     @AfterClass
     public static void closeSession() {
-        base.finalizeExtentTestReport();
+        finalizeExtentTestReport();
         driver.quit();
     }
 
     @After
     public void afterTest() {
-        base.finalizeTestReport();
+        finalizeTestReport();
     }
 
     @Test
     public void test1() throws ParserConfigurationException, SAXException, IOException, InterruptedException {
 
-        base.initTestReport("Test1 - attempt login", "text contains what should be an unsuccessful login attempt due to short password and element location on Developers page usin g footer");
+        initTestReport("Test1 - attempt login", "fbsignup test");
         // test = extent.startTest("Test1 - attempt login", "text contains what should be an unsuccessful login attempt due to short password");
         //comOps.verifyElementExists(fbsu.fName);
         //comOps.verifyElementExists(fbsu.lName);
