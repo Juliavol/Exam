@@ -6,6 +6,8 @@
 <ChromeDriverPath>C:/workspace/selenuimDrivers/chromedriver.exe</ChromeDriverPath>
 <ReportFilePath>C:/workspace/Selenium_reports/</ReportFilePath>
 <ReportFileName>testfbReport.html</ReportFileName>
+<ScreenshotFilePath>C:/workspace/Selenium_reports/</ScreenshotFilePath>
+<ScreenshotFileName>capture.png</ScreenshotFileName>
 <fName>Julia</fName>
 <lName>Shub</lName>
 <bDay>23</bDay>
